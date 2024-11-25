@@ -1,0 +1,286 @@
+html {
+    background:white;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background:grey;
+    color:black;
+    margin: 0 auto; 
+    padding:1.75em;
+    width:1500px;
+    height:150px;
+    background-position: center -350px;
+    background-size: cover;
+}
+
+header p{
+    text-align:center;
+    font-size:medium;
+    line-height:2.154
+}
+
+#header2 {
+  background-size: cover;
+  background-position: center;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+.a_text{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 0px;
+}
+
+a:hover {
+    color: red;
+}
+
+nav ul {
+    margin:0;
+    padding:10 1em 10 10;
+    text-align:center;    
+}
+
+h1 {
+    text-align:center;
+    margin:40px;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 20px; /* Tamany de lletra en píxels */
+    
+}
+
+h3 {
+    text-align: justify;
+    font-size: 18px; /* Tamany de lletra en píxels */
+    font-weight: normal; /* Gruix de lletra normal */
+}
+
+footer{
+    text-align:center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: fixed; /* Fixar el footer a la part inferior de la pantalla */
+    left: 0; /* Fixar a la part esquerra */
+    bottom: 0; /* Fixar a la part inferior */
+    width: 100%; /* Fer que ocupi tota l'amplada de la pantalla */
+    color: rgb(0, 0, 0); /* Color del text */
+    text-align: center; /* Centrar el text */
+    padding: 20px; /* Afegir padding */
+    box-sizing: border-box; /* Inclou el padding en el càlcul de l'amplada */
+}
+
+#menu-vertical {
+    display: flex;
+    flex-direction: column; /* Per mantenir els enllaços un damunt l'altre */
+    margin-top: 50px; /* Afegir 100px d'espai per sota del header */
+    margin-left : 50px;
+    display: block;    /* Els enllaços s'alinearan un sota l'altre */
+    
+  }
+
+#menu-vertical a {
+    display: block; /* Fa que els enllaços es mostrin un sota l'altre */
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex; /* Fa que els fills es distribueixin en línia */
+  }
+
+section {
+    flex: 1; /* Per fer que ocupi tot l'espai disponible al costat */
+    margin-left: 80px;
+    margin-right : 200px;
+    margin-top: 0; /* Afegir 100px d'espai per sota del header */
+ }
+
+ .contenidorpresentacio {
+    display: flex; /* Posar els elements en línia horitzontal */
+    align-items: center; /* Assegurar que la imatge i el text comencin al mateix nivell */
+    justify-content: flex-start;
+    gap: 20px; /* Espai entre la imatge i el text */
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .contenidor-noticies .contenidorpresentacio:last-child {
+    border-bottom: none; /* Treure la línia per l'últim element */
+    padding-bottom: 0; /* Ajustar el padding si cal */
+}
+
+  .contenidorpresentacio img {
+    max-width: 200px; /* Amplada màxima de la imatge */
+    height: 150px; /* Manté la proporció de la imatge */
+  }
+
+  .contenidorpresentacio h3 {
+    font-size: 16px; /* Ajusta el tamany del text si cal */
+    text-align: justify; /* Justifica el text */
+  }
+
+  .text-outline {
+    font-size: 18px; /* Mida de la font */
+    font-weight: bold; /* Negreta */
+    color: black; /* Color interior de les lletres, negre */
+    
+    /* Afegim el contorn blanc amb una ombra múltiple */
+    text-shadow: 
+        1px 1px 0 white, 
+        -1px -1px 0 white, 
+        1px -1px 0 white, 
+        -1px 1px 0 white; /* Fa que la silueta sigui blanca */
+}
+.text-outline2 {
+    font-size: 30px; /* Mida de la font */
+    font-weight: bold; /* Negreta */
+    color: black; /* Color interior de les lletres, negre */
+    
+    /* Afegim el contorn blanc amb una ombra múltiple */
+    text-shadow: 
+        1px 1px 0 white, 
+        -1px -1px 0 white, 
+        1px -1px 0 white, 
+        -1px 1px 0 white; /* Fa que la silueta sigui blanca */
+}
+#menu-vertical h2 {
+    margin-bottom: 30px; /* Espai entre el títol i els enllaços */
+    text-align: center; /* (Opcional) Centra el text del títol si vols */
+}
+
+.h2titulo {
+    text-align: center;
+    font-size: 30px;
+}
+
+.h2titulnoticias {
+    text-align: left;
+    font-size: 18px;
+}
+
+.contenidor-text {
+    flex: 1; /* Fa que el contingut textual ocupi la resta de l'espai */
+}
+
+.contenidor-noticies {
+    max-height: 560px; /* Altura màxima visible abans de mostrar les barres de desplaçament */
+    overflow-y: auto;  /* Mostra una barra de desplaçament vertical si el contingut excedeix l'altura */
+    padding-right: 10px; /* Per evitar que el contingut es desplaçi darrere de la barra de desplaçament */
+    scrollbar-color: black white; /* Thumb (color de la part que es mou) i Track (color de fons) */
+    scrollbar-width: thin; /* Amplada de la barra de desplaçament */
+  }
+
+  fieldset {
+    margin-left: 170px; /* Separació lateral */
+    width: 500px; /* Amplada fixa */
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  /* Disseny dels elements */
+  label, input, select {
+    display: block; /* Cada element ocupa tota la línia */
+    margin-bottom: 15px; /* Separació entre elements */
+  }
+
+  input, select {
+    width: 100%; /* Amplada completa del formulari */
+    padding: 5px;
+    box-sizing: border-box; /* Assegura que el padding no trenqui l'amplada */
+  }
+
+  legend {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  /* Estil especial per l'últim input */
+  input[name="comenta"] {
+    height: 150px; /* Alçada personalitzada */
+    width: 500px;
+    resize: none; /* Evita que es redimensioni si vols */
+    text-align: center;
+    padding-top: 5px; /* Text desplaçat cap amunt */
+    padding-left: 5px; /* Text desplaçat a l'esquerra */
+    box-sizing: border-box; /* Assegura que el padding no alteri l'amplada */
+  }
+
+  button {
+    float: right;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-container {
+    display: flex; /* Utilitzem flexbox per posar els formularis al costat */
+    gap: 5px; /* Afegim un espai entre els formularis */
+    justify-content: space-between; /* Opcional: distribució equitativa d'espai */
+    flex-wrap: wrap; /* Permet que els formularis es passin a una nova línia en pantalles petites */
+    padding: 20px;
+    padding-left: 55px; 
+  }
+
+  .form-article {
+    flex: 1 1 28%; /* Ocupa el 48% de l'amplada per evitar que els formularis s'allunyin massa */
+    box-sizing: border-box;
+  }
+
+  .ul-img {
+    list-style: none; /* Elimina els punts de la llista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Cada imatge ocuparà tota la línia i es mourà a una de nova */
+    margin: 10px 0; /* Opcional: Espai entre les imatges */
+    flex-direction: column;
+    gap: 10px; 
+    padding-left: 150px;
+  }
+
+  .ul-img li {
+    display: flex; /* Flexbox per alinear imatge i text */
+    align-items: center; /* Alinea verticalment */
+    margin: 10px 0; /* Espai entre cada element */
+    font-size:20px;
+  }
+
+  .ul-img img {
+    margin-right: 50px; /* Espai entre la imatge i el text */
+    height:50px;
+    width: 50px;
+  }
+  .boton2 {
+    display: inline-block;
+    margin-top: 15px; /* Baixa el botó una mica respecte al text */
+    padding: 8px 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #080808; /* Blau per defecte */
+    text-decoration: none; /* Treu el subratllat */
+    border: none;
+    border-radius: 5px; /* Cantonades arrodonides */
+    cursor: pointer;
+    text-align: center;
+}
+.boton2:hover {
+    background-color: #717172; /* Canvia el color al passar el ratolí */
+}
+
+.fitxa {
+  list-style-type: none; /* Elimina els punts de la llista */
+  padding: 0; /* Opcional: elimina el marge esquerre de la llista */
+  margin: 0; /* Opcional: elimina l'espai superior o inferior de la llista */
+}

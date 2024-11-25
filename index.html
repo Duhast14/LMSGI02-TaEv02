@@ -1,0 +1,109 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
+<!-- Link Autoevaluación : -->
+<!--   -->
+<!--  ------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Declaración del doctype en HTML5 -->
+<!doctype html>
+
+<html>
+
+  <head>
+    <!-- Sintaxis en HTML5. -->
+    <html lang="es">
+    <meta charset="utf-8">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landas, un paraíso</title>
+    
+    <!-- Link ubicación de estilos.css -->
+      <link rel="stylesheet" href="estilos/estilos.css">
+      
+  </head>
+
+  <body>
+    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+    <script>
+    // Array amb les rutes de les imatges
+      const imatges = [
+        'imagenes/banners/landas1.jpeg',
+        'imagenes/banners/landas1.jpg',
+        'imagenes/banners/landas2.jpg',
+        'imagenes/banners/landas3.jpg',
+        'imagenes/banners/landas4.jpg',
+        'imagenes/banners/landas5.jpeg',
+        
+      ];
+
+      // Selecciona una imatge aleatòria
+      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+      // Aplica la imatge al 'header'
+      const header = document.getElementById('header');
+      header.style.backgroundImage = `url(${imatgeAleatoria})`;
+    </script>
+    
+    <nav>
+      <ul class="text-outline">
+        <a href="paginas/index.html" >INICIO</a>
+        <a href="paginas/quehacer.html">QUE HACER</a>
+        <a href="paginas/noticias.html">NOTICIAS</a>
+        <a href="paginas/contacto.html">CONTACTO</a>
+      </ul>
+    </nav>
+    
+      </header>
+        
+      <div class="container">
+        <nav id="menu-vertical">
+          <h2>
+            QUE HACER ?
+          </h2>
+          <a href="paginas/quehacer.html">LUGARES</a>
+          <a href="paginas/rutasverdes.html">RUTAS VERDES</a>
+          <a href="paginas/acuaticas.html">ACT. ACUÁTICAS</a>
+          <a href="paginas/cultura.html">CULTURA</a>
+        </nav>
+
+        <section>
+          <article>
+            <h2 class="h2titulo">
+              BIENVENIDOS A NUESTRA WEB
+            </h2>
+            <h2>
+              Verdad que has oido hablar sobre Las LANDAS, pero que es ? donde está ? que hacer ?
+            </h2>
+            <div class="contenidorpresentacio">
+              <img src="imagenes/escudo landas.jfif" title="Escudo de armas de las Landas" />
+              <h3>
+                  Bienvenidos a la web sobre las Landas, un paraíso (para nosotros), entre Euskalherria y Bordeaux.<br><br>
+                  Es un departamento de Francia situado en el sudoeste del país, perteneciente, desde el 1 de enero de 2016, a la nueva región de Nueva Aquitania.
+                  Limita al norte con Gironda, al este con Lot y Garona y Gers, al sur con los Pirineos Atlánticos y al oeste con el océano Atlántico (Costa de Plata).<br><br>​
+                  Tiene su prefectura en Mont-de-Marsan y una subprefectura en Dax. Ambas ciudades están separadas por algo más de 50 kms.<br><br>
+                  Es el lugar prefecto para prácticar surf en sus largas, arenosas y múltiples playas, perderse por el interior con cantidad de vías verdes, sea a pie o en bicicleta
+                  entre bosques de pinos, multitud de lagos y pueblitos con encanto y con mercados para comprar sus productos locales y su producto estrella: el pato;
+                  o por que no, meterse con la familia en sus numerosos campings con multitud de actividades.<br><br>
+                  La intención de esta web es informarte de que puedes hacer en tus vacaciones o visitas a esta zona, por que lo tienes a dos horitas como mínimo desde Euskalherria
+                  que personalmente, nos carga de energía, nos relaja y disfrutamos de la naturaleza.
+              </h3>
+            </div>
+
+          </article>
+        </section>
+      </div>
+
+      <footer>
+        <p class="sectionSign"></p>
+        <p>&copy; 2024 Carles Rodríguez i Rovira</p>
+      </footer>
+
+    </body>
+
+</html>

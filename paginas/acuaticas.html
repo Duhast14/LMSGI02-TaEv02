@@ -1,0 +1,136 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
+<!-- Link Autoevaluación : -->
+<!--   -->
+<!--  ------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Declaración del doctype en HTML5 -->
+<!doctype html>
+
+<html>
+
+  <head>
+    <!-- Sintaxis en HTML5. -->
+    <html lang="es">
+    <meta charset="utf-8">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landas, un paraíso</title>
+    
+    <!-- Link ubicación de estilos.css -->
+      <link rel="stylesheet" href="../estilos/estilos.css">
+      
+  </head>
+
+  <body>
+    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+    <script>
+    // Array amb les rutes de les imatges
+    const imatges = [
+        '../imagenes/banners/landas1.jpeg',
+        '../imagenes/banners/landas1.jpg',
+        '../imagenes/banners/landas2.jpg',
+        '../imagenes/banners/landas3.jpg',
+        '../imagenes/banners/landas4.jpg',
+        '../imagenes/banners/landas5.jpeg',
+        
+      ];
+
+      // Selecciona una imatge aleatòria
+      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+      // Aplica la imatge al 'header'
+      const header = document.getElementById('header');
+      header.style.backgroundImage = `url(${imatgeAleatoria})`;
+    </script>
+    
+    <nav>
+      <ul class="text-outline">
+        <a href="../index.html" >INICIO</a>
+        <a href="quehacer.html">QUE HACER</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="contacto.html">CONTACTO</a>
+      </ul>
+    </nav>
+    
+      </header>
+        
+      <div class="container">
+        <nav id="menu-vertical">
+          <h2>QUE HACER ?</h2>
+          <a href="quehacer.html">LUGARES</a>
+          <a href="rutasverdes.html">RUTAS VERDES</a>
+          <a href="acuaticas.html">ACT. ACUATICAS</a>
+          <a href="cultura.html">CULTURA</a>
+        </nav>
+
+        <section>
+          <h2 class="h2titulo">ACTIVIDADES ACUÁTICAS</h2>
+
+          <article>
+            <div class="contenidor-noticies">
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/acuaticas/txalupa.jpg" title="Port Miniature" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">PORT EN MINIATURE (SOUSTONS)</h2>
+                  <h3>
+                    En Soustons, aunque cerca de la playa y a tiro de piedra de Vieux-Bocau, está el lago de Pinsolles. Aqui puedes conducir nuestras réplicas de barcos eléctricos
+                    con la familia. Es una manera de pasar un momento agradable en familia, mientras se aprecia la naturaleza salvaje del lago marino. Hay una zona de picnic, 
+                    se puede pasear a pie o en bicicleta alrededor del lago. Cerca también hay un lago con salida al mar con una isla en medio.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div>
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img class="fotillos" src="../imagenes/lugares/acuaticas/hossegor.jpg" title="Surfear en Hossegor">
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">HOSSEGOR, EL PARAISO DEL SURFISTA</h2>
+                  <h3>
+                    Hossegor se ubica en la zona de Las Landas. Es considerado uno de los mejores destinos de surf en toda Europa con rompientes consistentes de arena. 
+                    Durante muchos años Hossegor ha sido sede del circuito mundial de la WSL, siendo un escenario perfecto para los mejores surfistas del mundo. 
+                    Hoy en día reúne a surfistas de todo el planeta que viajan hasta Francia para surfear buenas olas y disfrutar de muy buena comida. Puedes apuntarse a hacer
+                    cursillos de iniciación en las múltiples escuelas surferas.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div> 
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img class="fotillos" src="../imagenes/lugares/acuaticas/canoa.jpg" title="Canoas" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">AU FIL DE L'EAU (VIELLE-St.-GIRONS)</h2>
+                  <h3>
+                    La playa de Vielle, en la orilla norte del lago, ofrece una zona verde y arbolada en la que resulta agradable pasar el día. 
+                    El centro de deportes acuáticos "Au fil de l'eau" ofrece un paseo en canoa, que le llaman: 3 Universos, 3 descubrimientos:  que
+                    pasas por el lago, el pantano y río. <br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>                   
+                  </h3>
+                </div>
+              </div> 
+            </div>
+
+          </article>
+        </section>
+      </div>
+
+      <footer>
+        <p class="sectionSign"></p>
+        <p>&copy; 2024 Carles Rodríguez i Rovira</p>
+      </footer>
+
+    </body>
+
+</html>

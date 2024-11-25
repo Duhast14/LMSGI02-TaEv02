@@ -1,0 +1,157 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
+<!-- Link Autoevaluación : -->
+<!--   -->
+<!--  ------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Declaración del doctype en HTML5 -->
+<!doctype html>
+
+<html>
+
+  <head>
+    <!-- Sintaxis en HTML5. -->
+    <html lang="es">
+    <meta charset="utf-8">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landas, un paraíso</title>
+    
+    <!-- Link ubicación de estilos.css -->
+      <link rel="stylesheet" href="../estilos/estilos.css">
+      
+  </head>
+
+  <body>
+    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+    <script>
+    // Array amb les rutes de les imatges
+    const imatges = [
+        '../imagenes/banners/landas1.jpeg',
+        '../imagenes/banners/landas1.jpg',
+        '../imagenes/banners/landas2.jpg',
+        '../imagenes/banners/landas3.jpg',
+        '../imagenes/banners/landas4.jpg',
+        '../imagenes/banners/landas5.jpeg',
+        
+      ];
+
+      // Selecciona una imatge aleatòria
+      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+      // Aplica la imatge al 'header'
+      const header = document.getElementById('header');
+      header.style.backgroundImage = `url(${imatgeAleatoria})`;
+    </script>
+    
+    <nav>
+      <ul class="text-outline">
+        <a href="../index.html" >INICIO</a>
+        <a href="quehacer.html">QUE HACER</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="contacto.html">CONTACTO</a>
+      </ul>
+    </nav>
+    
+      </header>
+        
+      <div class="container">
+        <nav id="menu-vertical">
+          <h2>QUE HACER ?</h2>
+          <a href="quehacer.html">LUGARES</a>
+          <a href="rutasverdes.html">RUTAS VERDES</a>
+          <a href="acuaticas.html">ACT. ACUÁTICAS</a>
+          <a href="cultura.html">CULTURA</a>
+        </nav>
+
+        <section>
+          <h2 class="h2titulo">LUGARES QUE DEBERÍAS VISITAR</h2>
+          
+          <article>
+            <div class="contenidor-noticies">
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/lugares/labenne.jpg" title="Paseando por las Landas" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">LABENNE</h2>
+                  <h3>
+                    Labenne es una comuna litoral que está a unos 13 kms de Baiona, viven un poco más de 7000 personas (datos de 2021). Hay dos cosas que se pueden visitar en Labenne, la primera es la capilla de Santa Teresa (ver foto izquierda), que esta situada entre las dunas y que fue inagurada
+                    en 1932 y la segunda son bunkers, semienterrados en la playa Central, que pertenecen al muro del Atlántico Sur, construidos por los nazis en 1942. Este tipo de bunkers,
+                    también se pueden encontrar en Capbreton.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+
+                  </h3>
+                </div>
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/lugares/petroleo.jpg" title="Bomba extractora de petróleo">
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">PARENTIS-EN-BORN </h2>
+                  <h3>
+                    Parentis-en-Born es conocida por ser la capital francesa de extración de petróleo. Es una comuna del interior, sin litoral marítimo, pero un largo litoral junto al lago. 
+                  En 2021 estaban censados unos 7000 habitantes y está situada a una hora de Mont-de-Marsan. 
+                  
+                  En 1954 se descubrió que había petróleo y se empezó su extracción. Actualmente, se extraen 21700 tn al año, siendo el 11 % de la extracción nacional y es hasta la 
+                  fecha el yacimiento más importante en territorio francés. Desde Gastes, al otro lado del lago, se pueden ver las bombas y los caminos que van a los campings y restaurantes 
+                  del lago de Parentis, las puedes ver de cerca, eso si, detrás de la valla.<br>
+
+                  <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+
+                  </h3>
+                </div> 
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/lugares/faro.jpg" title="Faro de Contis" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">CONTIS-PLAGE</h2>
+                  <h3>
+                    Contis-Plage pertenece a la comuna de St. Julien-en-Born y digamos, que es la playa de la comuna y esta a unos 7 kms del centro de St. Julien. 
+                    En ella podrás encontrar el famoso faro de Contis, que es el único que hay desde Biarritz hasta Cap-Ferret (cerca de Bordeaux). 
+                    Hay pocas casas y locales comparado con Biscarrose o con Mimizan, tiene su encanto
+                    y, personalmente, yo prefiero esta playa por que al no tanta magnificación  <br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div>
+              </div>
+              
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/lugares/dax.jpg" title="Fontaine Chaude" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">DAX</h2>
+                  <h3>
+                    La antigua Aquae Tarbellicae, de origen romano y conocida por su termalismo. Es de obligada visita a la Fontaine Chaude, que es monumento histórico. Situada en el centro de la 
+                    ciudad, símbolo de la hidroterapia, el agua que sale de sus caños suele estar a 64 grados. También se puede visitar su catedral, a pocos de metros de la Fontaine Chaude. En Dax podemos 
+                    encontrar el monumento del Legionario y su perro, nos podemos perder en su centro y pasear por los restos de su muralla galo-romana. Recomendable visitar el Pont-Vieux, donde
+                    pasa el Adour.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div>
+              </div> 
+            </div>
+
+          </article>
+        </section>
+      </div>
+
+      <footer>
+        <p class="sectionSign"></p>
+        <p>&copy; 2024 Carles Rodríguez i Rovira</p>
+      </footer>
+
+    </body>
+
+</html>

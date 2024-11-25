@@ -1,0 +1,144 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
+<!-- Link Autoevaluación : -->
+<!--   -->
+<!--  ------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Declaración del doctype en HTML5 -->
+<!doctype html>
+
+<html>
+
+  <head>
+    <!-- Sintaxis en HTML5. -->
+    <html lang="es">
+    <meta charset="utf-8">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landas, un paraíso</title>
+    
+    <!-- Link ubicación de estilos.css -->
+      <link rel="stylesheet" href="../estilos/estilos.css">
+      
+  </head>
+
+  <body>
+    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+    <script>
+    // Array amb les rutes de les imatges
+    const imatges = [
+        '../imagenes/banners/landas1.jpeg',
+        '../imagenes/banners/landas1.jpg',
+        '../imagenes/banners/landas2.jpg',
+        '../imagenes/banners/landas3.jpg',
+        '../imagenes/banners/landas4.jpg',
+        '../imagenes/banners/landas5.jpeg',
+        
+      ];
+
+      // Selecciona una imatge aleatòria
+      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+      // Aplica la imatge al 'header'
+      const header = document.getElementById('header');
+      header.style.backgroundImage = `url(${imatgeAleatoria})`;
+    </script>
+    
+    <nav>
+      <ul class="text-outline">
+        <a href="../index.html" >INICIO</a>
+        <a href="quehacer.html">QUE HACER</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="contacto.html">CONTACTO</a>
+      </ul>
+    </nav>
+    
+      </header>
+        
+      <div class="container">
+        <nav id="menu-vertical">
+          <h2>
+            QUE HACER ?
+          </h2>
+          <a href="quehacer.html">LUGARES</a>
+          <a href="rutasverdes.html">RUTAS VERDES</a>
+          <a href="acuaticas.html">ACT. ACUÁTICAS</a>
+          <a href="cultura.html">CULTURA</a>
+        </nav>
+
+        <section>
+          <h2 class="h2titulo">
+            NOTICIAS
+          </h2>
+
+          <article>
+            <div class="contenidor-noticies">
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/noticias/bus.jpg" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">TRANSPORTE PUBLICO EN LAS LANDAS</h2>
+                  <h3>
+                    Recientemente, la web ha publicado <a href="https://landas.eu/" class ="a_text" target="new">LANDAS.EU</a> las líneas de transporte público para poder desplazarnos
+                    desde el interior de las Landas a la costa. Aunque, desplazarse por los municipios de la costa, es casi obligatorio usar vehiculo propio, ya que no hay servicio de trenes de 
+                    cercanías o líneas de autobus que recorran estos municipios. <br><br>
+                    En esta página puedes encontrar las líneas de bus que recorren la zona, la línea de tren que viene desde Bordeaux o desde Arcachon hasta Hegoalde, e incluso, las lanzaderas
+                    GRATUITAS que van desde el interior a las playas, los precios de las billetes y descargarte mapas de las líneas.<br><br>
+              
+                    Para poder ver toda esta info, que además, está en castellano, basta con que pulses <a href="https://landas.eu/transporte-en-las-landas/" class ="a_text" target="new">AQUÍ</a>.<br><br>
+
+                    También <a href="https://www.trans-landes.fr/" class ="a_text" target="new">AQUI</a> puedes encontrar más info sobre los autobuses y diversos transportes locales a demanda, pero en francés
+                  </h3>
+                </div>
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/noticias/bus.jpg"/>
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">SANGUINET</h2>
+                  <h3>
+                    Sanguinet es una comuna tocando ya Arcachon (conocida capital de las ostras) y en esta comuna de más de 4000 habitantes, existe un museo del Lago, donde podemos hacer
+                    un recorrido histórico desde la edad de bronce hasta nuestros días. Tambien existe, saliendo desde la oficina de Turismo, un recorrido de 4 kms por el patrimonio
+                    de la comuna y finalmente, en el mes de julio se celebra el festival de Jazz.
+                </div> 
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/noticias/bus.jpg" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">TRANSPORTE PUBLICO EN LAS LANDAS</h2>
+                  <h3>
+                    Recientemente, la web ha publicado <a href="https://landas.eu/" class ="a_text" target="new">LANDAS.EU</a> las líneas de transporte público para poder desplazarnos
+                    desde el interior de las Landas a la costa. Aunque, desplazarse por los municipios de la costa, es casi obligatorio usar vehiculo propio, ya que no hay servicio de trenes de 
+                    cercanías o líneas de autobus que recorran estos municipios. <br><br>
+                    En esta página puedes encontrar las líneas de bus que recorren la zona, la línea de tren que viene desde Bordeaux o desde Arcachon hasta Hegoalde, e incluso, las lanzaderas
+                    GRATUITAS que van desde el interior a las playas, los precios de las billetes y descargarte mapas de las líneas.<br><br>
+              
+                    Para poder ver toda esta info, que además, está en castellano, basta con que pulses <a href="https://landas.eu/transporte-en-las-landas/" class ="a_text" target="new">AQUÍ</a>.<br><br>
+
+                    También <a href="https://www.trans-landes.fr/" class ="a_text" target="new">AQUI</a> puedes encontrar más info sobre los autobuses y diversos transportes locales a demanda, pero en francés
+                  </h3>
+                </div>
+              </div> 
+            </div>
+
+          </article>
+        </section>
+      </div>
+
+      <footer>
+        <p class="sectionSign"></p>
+        <p>&copy; 2024 Carles Rodríguez i Rovira</p>
+      </footer>
+
+    </body>
+
+</html>

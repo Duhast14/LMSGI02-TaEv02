@@ -1,0 +1,137 @@
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
+<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
+<!-- Link Autoevaluación : -->
+<!--   -->
+<!--  ------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+<!-- Declaración del doctype en HTML5 -->
+<!doctype html>
+
+<html>
+
+  <head>
+    <!-- Sintaxis en HTML5. -->
+    <html lang="es">
+    <meta charset="utf-8">
+    
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Landas, un paraíso</title>
+    
+    <!-- Link ubicación de estilos.css -->
+      <link rel="stylesheet" href="../estilos/estilos.css">
+      
+  </head>
+
+  <body>
+    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+    <script>
+    // Array amb les rutes de les imatges
+    const imatges = [
+        '../imagenes/banners/landas1.jpeg',
+        '../imagenes/banners/landas1.jpg',
+        '../imagenes/banners/landas2.jpg',
+        '../imagenes/banners/landas3.jpg',
+        '../imagenes/banners/landas4.jpg',
+        '../imagenes/banners/landas5.jpeg',
+        
+      ];
+
+      // Selecciona una imatge aleatòria
+      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+      // Aplica la imatge al 'header'
+      const header = document.getElementById('header');
+      header.style.backgroundImage = `url(${imatgeAleatoria})`;
+    </script>
+    
+    <nav>
+      <ul class="text-outline">
+        <a href="../index.html" >INICIO</a>
+        <a href="quehacer.html">QUE HACER</a>
+        <a href="noticias.html">NOTICIAS</a>
+        <a href="contacto.html">CONTACTO</a>
+      </ul>
+    </nav>
+    
+      </header>
+        
+      <div class="container">
+        <nav id="menu-vertical">
+          <h2>QUE HACER ?</h2>
+          <a href="quehacer.html">LUGARES</a>
+          <a href="rutasverdes.html">RUTAS VERDES</a>
+          <a href="acuaticas.html">ACT. ACUÁTICAS</a>
+          <a href="cultura.html">CULTURA</a>
+        </nav>
+
+        <section>
+          <h2 class="h2titulo">CULTURA</h2>
+
+          <article>
+            <div class="contenidor-noticies">
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/cultura/sanguinet.jpeg" title="Museo Municipal del lago Sanguinet" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">MUSEO MUNICIPAL de SANGUINET</h2>
+                  <h3>
+                    Sanguinet es una comuna tocando ya Arcachon (conocida capital de las ostras) y en esta comuna de más de 4000 habitantes, existe un museo del Lago, donde podemos hacer
+                    un recorrido histórico desde la edad de bronce hasta nuestros días. Tambien existe, saliendo desde la oficina de Turismo, un recorrido de 4 kms por el patrimonio
+                    de la comuna y finalmente, en el mes de julio se celebra el festival de Jazz.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div>
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/cultura/hidroavion.jpg" title="Hidroavión de la colección Grumann Albatross">
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">MUSEO de la HIDROAVIACIÓN de BISCARROSSE</h2>
+                  <h3>
+                    Biscarrosse es una importante comuna de las Landas, muy cerca de la Duna de Pylat (que aunque no este en las Landas, si que recomiendo su visita). Esta comuna es conocido por 
+                    tener una base de hidroaviones y se pueden ver sobre volar los cielos. Existe un museo de la Hidroaviación, que está situado en el emplazamiento de la mítica antigua base
+                    Latécoère haciendo delicia de los amantes de los aparatos de dos alas. En el centro de la ciudad, existe también la Galerie de l’Orme, una galeria abierta a que artistas locales
+                    muestren sus obras en diversos campos artísticos.<br>
+
+                    <a href="cultura/museohidroaviacion.html" class="boton2">VER MÁS</a>
+                  </h3>
+                </div> 
+              </div>
+
+              <div class="contenidorpresentacio">
+                <img src="../imagenes/lugares/cultura/montdemarsan.jpg" title="Paisaje y lobo" />
+                
+                <div class="contenidor-text">
+                  <h2 class="h2titulonoticias">BOSQUE de ARTE CONTEMPORANEO (PARQUE NATURAL DE GASCUÑA )</h2>
+                  <h3>
+                    Con una treintena de obras y otras futuras en proyecto, esparcidas a lo largo del Parque Natural Regional de Gascuña,
+                    La Forêt d'Art Contemporain (FAC) tiene como objetivo desde 2009 crear en un entorno rural
+                    una verdadera herramienta para la producción y difusión del arte contemporáneo en forma de itinerario regional. Destacan Paisaje y Lobo (foto) del artista Roland Cognet,
+                    que se puede visitar en el Parc de Rameau, en Mont-de-Marsan.<br>
+
+                    <a href="https://www.enlacealapagina.com" class="boton2">VER MÁS</a>
+                  </h3>
+                </div>
+              </div> 
+            </div>
+
+          </article>
+        </section>
+      </div>
+
+      <footer>
+        <p class="sectionSign"></p>
+        <p>&copy; 2024 Carles Rodríguez i Rovira</p>
+      </footer>
+
+    </body>
+
+</html>
