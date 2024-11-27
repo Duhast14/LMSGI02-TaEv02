@@ -24,6 +24,25 @@ header p{
 #header2 {
   background-size: cover;
   background-position: center;
+  background-position: center -400px;
+}
+
+#header3 {
+  background-size: cover;
+  background-position: center;
+  background-position: center -600px;
+}
+
+#header4 {
+  background-size: cover;
+  background-position: center;
+  background-position: center -100px;
+}
+
+#header5 {
+  background-size: cover;
+  background-position: center;
+  background-position: center -800px;
 }
 
 a {
@@ -80,6 +99,10 @@ footer{
     box-sizing: border-box; /* Inclou el padding en el càlcul de l'amplada */
 }
 
+.footer-text::before {
+  content: "Autoría y licencias: Página web realizada por 2024 Carles Rodríguez i Rovira con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores";
+}
+
 #menu-vertical {
     display: flex;
     flex-direction: column; /* Per mantenir els enllaços un damunt l'altre */
@@ -96,6 +119,11 @@ footer{
 
 .container {
     display: flex; /* Fa que els fills es distribueixin en línia */
+  }
+
+  .container2 {
+    display: flex; /* Fa que els fills es distribueixin en línia */
+    padding-left: 150px;
   }
 
 section {
@@ -123,6 +151,11 @@ section {
   .contenidorpresentacio img {
     max-width: 200px; /* Amplada màxima de la imatge */
     height: 150px; /* Manté la proporció de la imatge */
+  }
+
+  .contenidorpresentacio2 img {
+    max-width: 200px; /* Amplada màxima de la imatge */
+    height: 450px; /* Manté la proporció de la imatge */
   }
 
   .contenidorpresentacio h3 {
@@ -204,6 +237,7 @@ section {
     font-size: 1.2em;
     font-weight: bold;
   }
+
   /* Estil especial per l'últim input */
   input[name="comenta"] {
     height: 150px; /* Alçada personalitzada */
@@ -276,11 +310,37 @@ section {
     text-align: center;
 }
 .boton2:hover {
-    background-color: #717172; /* Canvia el color al passar el ratolí */
+    background-color: #050505; /* Canvia el color al passar el ratolí */
 }
 
 .fitxa {
   list-style-type: none; /* Elimina els punts de la llista */
   padding: 0; /* Opcional: elimina el marge esquerre de la llista */
   margin: 0; /* Opcional: elimina l'espai superior o inferior de la llista */
+}
+
+.contenidorwebcam {
+  display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horitzontalment el contingut */
+    justify-content: center; /* Centrar verticalment el contingut dins del contenidor */
+    text-align: center; /* Centrar el text */
+    margin: 0 auto; /* Assegurar centrat horitzontal dins del contenidor pare */
+    width: 100%; /* Ocupa tota l'amplada disponible */
+}
+
+.iframe-webcam {
+  width: 1105px; /* Amplada de l'iframe */
+  height: 625px; /* Alçada de l'iframe */
+  overflow: hidden; /* Evita scrolls */
+  border: 1px solid #ccc; /* Bord suau (opcional) */
+  border-radius: 8px; /* Canto arrodonit (opcional) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra (opcional) */
+  
+}
+
+.iframe-webcam iframe {
+  width: 100%; /* Ajusta l'iframe al contenidor */
+  height: 100%; /* Ajusta l'iframe al contenidor */
+  border: none; /* Elimina els marges */
 }
