@@ -95,12 +95,12 @@ footer{
     width: 100%; /* Fer que ocupi tota l'amplada de la pantalla */
     color: rgb(0, 0, 0); /* Color del text */
     text-align: center; /* Centrar el text */
-    padding: 20px; /* Afegir padding */
+    padding: 0px; /* Afegir padding */
     box-sizing: border-box; /* Inclou el padding en el càlcul de l'amplada */
 }
 
 .footer-text::before {
-  content: "Autoría y licencias: Página web realizada por 2024 Carles Rodríguez i Rovira con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores";
+  content: "Autoría y licencias: Página web realizada por 2024 Carles Rodríguez i Rovira con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores.";
 }
 
 #menu-vertical {
