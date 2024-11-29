@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,72 +30,96 @@
   </head>
 
   <body>
+    <!-- Solo pongo una imagen acorde con el lugar, en función de lo que quiero que se muestre, cambio la clase del header -->
     <header id="header3" title = "Plataforma petrolífera" style="background-image: url('../../imagenes/banners/parentis.jpg');">
-        <h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+
+      <!-- TITULO DE LA WEB -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="../../index.html" >INICIO</a>
-        <a href="../quehacer.html">QUE HACER</a>
-        <a href="../noticias.html">NOTICIAS</a>
-        <a href="../contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../../index.html">INICIO</a>
+          <a href="../quehacer.html">QUE HACER</a>
+          <a href="../noticias.html">NOTICIAS</a>
+          <a href="../contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
     
     </header>
         
-      <div class="container2">
+    <!-- Un contendor que contiene dos divs -->
+    <div class="container2">
 
-        <section>
-            <h2 class="h2titulo">PARENTIS-EN-BORN</h2>
-  
-            <article>
-              <div class="contenidor-noticies">
-                <div class="contenidorpresentacio">
-                    <img src="../../imagenes/lugares/lugares/parentis2.jpg" title = "Kiosko en el centro de Parentis"/>
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
+        <!-- Título de esta página -->
+        <h2 class="h2titulo">PARENTIS-EN-BORN</h2>
+        
+        <!-- Publicación del artículo -->
+        <article>
+
+          <!-- Div donde se van a alojar los artículos, con una clase -->
+          <div class="contenidor-noticies">
+
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
+
+              <!-- Imagen del artículo -->
+              <img src="../../imagenes/lugares/lugares/parentis2.jpg" title = "Kiosko en el centro de Parentis"/>
                     
-                    <div class="contenidor-text">
+              <!--  Estilo donde va a ir el texto de la noticia -->   
+              <div class="contenidor-text">
                       
-                      <h3>
-                        Parentis-en-Born es la tercer pueblo más importante del Pays de Born, después de Mimizan y Biscarrosse. 
-                        Tiene una extensión de 11 155 hectares al este del lago de Parentis-Biscarrosse, el segundo de las Landas por superficie (3 540 ha).
-                        situada al norte de Las Landas, limita con Biscarrosse, Gastes, Lüe, Pontenx-les-Forges, Ychoux, Sanguinet, Saint-Paul-en-Born, Sainte-Eulalie-en-Born y Lugos.<br><br>
-                        El pueblo en si, no tiene mucho, pero si que destaca y de alguna manera es chocante, saber que, Parentis posee la mayor reserva de petróleo, descubierta en 1954. 
-                        Paseando por el lago, puedes ver las antiguas bombas extractoras y las  plataformas que hay en el lago. A modo de curiosidad, la empresa extractora es de origen canadiense<br><br>
-                        Es recomendable, pasear a las últimas horas del día para ver la puesta de sol y la visita a un bar que hay junto al puerto del lago con unas vistas increíbles del lago. Eso si, 
-                        Francia es caro, según lo caro que quieres que sea y ese bar, llamado Rose & Joséphine, con esas vistas, merece la pena pagar ese poquito de más.<br><br>
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  Parentis-en-Born es la tercer pueblo más importante del Pays de Born, después de Mimizan y Biscarrosse. 
+                  Tiene una extensión de 11 155 hectares al este del lago de Parentis-Biscarrosse, el segundo de las Landas por superficie (3 540 ha).
+                  situada al norte de Las Landas, limita con Biscarrosse, Gastes, Lüe, Pontenx-les-Forges, Ychoux, Sanguinet, Saint-Paul-en-Born, Sainte-Eulalie-en-Born y Lugos.<br><br>
+                  El pueblo en si, no tiene mucho, pero si que destaca y de alguna manera es chocante, saber que, Parentis posee la mayor reserva de petróleo, descubierta en 1954. 
+                  Paseando por el lago, puedes ver las antiguas bombas extractoras y las  plataformas que hay en el lago. A modo de curiosidad, la empresa extractora es de origen canadiense<br><br>
+                  Es recomendable, pasear a las últimas horas del día para ver la puesta de sol y la visita a un bar que hay junto al puerto del lago con unas vistas increíbles del lago. Eso si, 
+                  Francia es caro, según lo caro que quieres que sea y ese bar, llamado Rose & Joséphine, con esas vistas, merece la pena pagar ese poquito de más.<br><br>
 
-                        En septiembre, estuvimos alojados en uno de sus campings y todo era paz y tranquilidad, con lluvia aún más. El pueblo es tranquilo, con mucho movimiento
-                        los días de mercado. La costa la tienes en Biscarrosse a unos 20 kms y si te apetece ir a Bordeaux, pues a una hora. Cerca también esta Arcachon, conocida
-                        por sus ostras y la Duna de Pylat, la mayor duna de arena europea, que a no pertenecer a las Landas, si que merecería un apartado en esta web.
+                  En septiembre, estuvimos alojados en uno de sus campings y todo era paz y tranquilidad, con lluvia aún más. El pueblo es tranquilo, con mucho movimiento
+                  los días de mercado. La costa la tienes en Biscarrosse a unos 20 kms y si te apetece ir a Bordeaux, pues a una hora. Cerca también esta Arcachon, conocida
+                  por sus ostras y la Duna de Pylat, la mayor duna de arena europea, que a no pertenecer a las Landas, si que merecería un apartado en esta web.
+
+                </h3>
+              </div>
+            </div>
     
-                      </h3>
-                    </div>
-                  </div>
-    
-                  <div class="contenidorpresentacio">
-                    
-                    <div class="contenidor-text">
-                      <h2 class="h2titulonoticias">LUGARES DE INTERES</h2>
-                      <h3>
-                        
-                        <ul>
-                            <li>Église Saint-Pierre, situada en el centro de la comuna. Construida en el S.XV</li>
-                            <li>El lago y plataformas petroliferas.</li>
-                            <li>Mercado : Jueves y domingo de 08:00 a 13:00. Place du Général De Gaulle </li>
-                                                      
-                        </ul>
-                        
-                      </h3>
-                    </div> 
-                  </div>
+            <!-- Div para la información sobre el tramo -->
+            <div class="contenidorpresentacio">
+              
+              <!--  Estilo donde va a ir el texto dde la info -->  
+              <div class="contenidor-text">
+
+                <!--  Titulo -->  
+                <h2 class="h2titulonoticias">LUGARES DE INTERES</h2>
+                
+                <!--  Lista con datos --> 
+                <h3>
+                  <ul>
+                      <li>Église Saint-Pierre, situada en el centro de la comuna. Construida en el S.XV</li>
+                      <li>El lago y plataformas petroliferas.</li>
+                      <li>Mercado : Jueves y domingo de 08:00 a 13:00. Place du Général De Gaulle </li>
+                                                
+                  </ul>                  
+                </h3>
+              </div> 
+            </div>
         </section>
       </div>
 
-      <footer>
-        <p class="footer-text"></p>
-      </footer>
+    <!-- el footer siempre aparece a lo largo y en la parte inferior de la página web -->
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
 
-    </body>
+  </body>
 
 </html>

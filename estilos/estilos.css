@@ -76,120 +76,118 @@ h1 {
 
 h2 {
     text-decoration: underline;
-    font-size: 20px; /* Tamany de lletra en píxels */
+    font-size: 20px;
     
 }
 
 h3 {
     text-align: justify;
-    font-size: 18px; /* Tamany de lletra en píxels */
-    font-weight: normal; /* Gruix de lletra normal */
+    font-size: 18px; 
+    font-weight: normal; 
 }
 
 footer{
     text-align:center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    position: fixed; /* Fixar el footer a la part inferior de la pantalla */
-    left: 0; /* Fixar a la part esquerra */
-    bottom: 0; /* Fixar a la part inferior */
-    width: 100%; /* Fer que ocupi tota l'amplada de la pantalla */
-    color: rgb(0, 0, 0); /* Color del text */
-    text-align: center; /* Centrar el text */
-    padding: 0px; /* Afegir padding */
-    box-sizing: border-box; /* Inclou el padding en el càlcul de l'amplada */
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    width: 100%; 
+    color: rgb(0, 0, 0);
+    text-align: center; 
+    padding: 0px; 
+    box-sizing: border-box; 
 }
 
 .footer-text::before {
-  content: "Autoría y licencias: Página web realizada por 2024 Carles Rodríguez i Rovira con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores.";
+  content: "Autoría y licencias: Página web realizada por Carles Rodríguez i Rovira con fines educativos. Todos los derechos de las imágenes están reservados y pertenecen a sus autores.";
 }
 
 #menu-vertical {
     display: flex;
-    flex-direction: column; /* Per mantenir els enllaços un damunt l'altre */
-    margin-top: 50px; /* Afegir 100px d'espai per sota del header */
+    flex-direction: column; 
+    margin-top: 50px; 
     margin-left : 50px;
-    display: block;    /* Els enllaços s'alinearan un sota l'altre */
+    display: block;    
     
   }
 
 #menu-vertical a {
-    display: block; /* Fa que els enllaços es mostrin un sota l'altre */
+    display: block; 
     margin-bottom: 20px;
 }
 
 .container {
-    display: flex; /* Fa que els fills es distribueixin en línia */
+    display: flex; 
   }
 
   .container2 {
-    display: flex; /* Fa que els fills es distribueixin en línia */
+    display: flex; 
     padding-left: 150px;
   }
 
 section {
-    flex: 1; /* Per fer que ocupi tot l'espai disponible al costat */
+    flex: 1; 
     margin-left: 80px;
     margin-right : 200px;
-    margin-top: 0; /* Afegir 100px d'espai per sota del header */
+    margin-top: 0;
  }
 
  .contenidorpresentacio {
-    display: flex; /* Posar els elements en línia horitzontal */
-    align-items: center; /* Assegurar que la imatge i el text comencin al mateix nivell */
+    display: flex; 
+    align-items: center; 
     justify-content: flex-start;
-    gap: 20px; /* Espai entre la imatge i el text */
+    gap: 20px; 
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
     padding-top: 10px;
   }
 
   .contenidor-noticies .contenidorpresentacio:last-child {
-    border-bottom: none; /* Treure la línia per l'últim element */
-    padding-bottom: 0; /* Ajustar el padding si cal */
+    border-bottom: none; 
+    padding-bottom: 0; 
 }
 
   .contenidorpresentacio img {
-    max-width: 200px; /* Amplada màxima de la imatge */
-    height: 150px; /* Manté la proporció de la imatge */
+    max-width: 200px; 
+    height: 150px; 
   }
 
   .contenidorpresentacio2 img {
-    max-width: 200px; /* Amplada màxima de la imatge */
-    height: 450px; /* Manté la proporció de la imatge */
+    max-width: 200px; 
+    height: 450px; 
   }
 
   .contenidorpresentacio h3 {
-    font-size: 16px; /* Ajusta el tamany del text si cal */
-    text-align: justify; /* Justifica el text */
+    font-size: 16px; 
+    text-align: justify; 
   }
 
-  .text-outline {
-    font-size: 18px; /* Mida de la font */
-    font-weight: bold; /* Negreta */
-    color: black; /* Color interior de les lletres, negre */
+  .text-outline2 {
+    font-size: 18px; 
+    font-weight: bold; 
+    color: black; 
     
-    /* Afegim el contorn blanc amb una ombra múltiple */
     text-shadow: 
         1px 1px 0 white, 
         -1px -1px 0 white, 
         1px -1px 0 white, 
-        -1px 1px 0 white; /* Fa que la silueta sigui blanca */
+        -1px 1px 0 white;
 }
-.text-outline2 {
-    font-size: 30px; /* Mida de la font */
-    font-weight: bold; /* Negreta */
-    color: black; /* Color interior de les lletres, negre */
+  .text-outline {
+    font-size: 30px;
+    font-weight: bold; 
+    color: black; 
     
-    /* Afegim el contorn blanc amb una ombra múltiple */
     text-shadow: 
         1px 1px 0 white, 
         -1px -1px 0 white, 
         1px -1px 0 white, 
-        -1px 1px 0 white; /* Fa que la silueta sigui blanca */
+        -1px 1px 0 white; 
 }
 #menu-vertical h2 {
-    margin-bottom: 30px; /* Espai entre el títol i els enllaços */
-    text-align: center; /* (Opcional) Centra el text del títol si vols */
+    margin-bottom: 30px; 
+    text-align: center; 
 }
 
 .h2titulo {
@@ -203,34 +201,34 @@ section {
 }
 
 .contenidor-text {
-    flex: 1; /* Fa que el contingut textual ocupi la resta de l'espai */
+    flex: 1; 
 }
 
 .contenidor-noticies {
-    max-height: 560px; /* Altura màxima visible abans de mostrar les barres de desplaçament */
-    overflow-y: auto;  /* Mostra una barra de desplaçament vertical si el contingut excedeix l'altura */
-    padding-right: 10px; /* Per evitar que el contingut es desplaçi darrere de la barra de desplaçament */
-    scrollbar-color: black white; /* Thumb (color de la part que es mou) i Track (color de fons) */
-    scrollbar-width: thin; /* Amplada de la barra de desplaçament */
+    max-height: 560px; 
+    overflow-y: auto; 
+    padding-right: 10px; 
+    scrollbar-color: black white;
+    scrollbar-width: thin;
   }
 
   fieldset {
-    margin-left: 170px; /* Separació lateral */
-    width: 500px; /* Amplada fixa */
+    margin-left: 170px; 
+    width: 500px; 
     border: 1px solid #ccc;
     padding: 10px;
   }
 
-  /* Disseny dels elements */
+
   label, input, select {
-    display: block; /* Cada element ocupa tota la línia */
-    margin-bottom: 15px; /* Separació entre elements */
+    display: block; 
+    margin-bottom: 15px; 
   }
 
   input, select {
-    width: 100%; /* Amplada completa del formulari */
+    width: 100%; 
     padding: 5px;
-    box-sizing: border-box; /* Assegura que el padding no trenqui l'amplada */
+    box-sizing: border-box; 
   }
 
   legend {
@@ -238,15 +236,15 @@ section {
     font-weight: bold;
   }
 
-  /* Estil especial per l'últim input */
+ 
   input[name="comenta"] {
-    height: 150px; /* Alçada personalitzada */
+    height: 150px; 
     width: 500px;
-    resize: none; /* Evita que es redimensioni si vols */
+    resize: none; 
     text-align: center;
-    padding-top: 5px; /* Text desplaçat cap amunt */
-    padding-left: 5px; /* Text desplaçat a l'esquerra */
-    box-sizing: border-box; /* Assegura que el padding no alteri l'amplada */
+    padding-top: 5px; 
+    padding-left: 5px; 
+    box-sizing: border-box; 
   }
 
   button {
@@ -260,87 +258,87 @@ section {
   }
 
   .form-container {
-    display: flex; /* Utilitzem flexbox per posar els formularis al costat */
-    gap: 5px; /* Afegim un espai entre els formularis */
-    justify-content: space-between; /* Opcional: distribució equitativa d'espai */
-    flex-wrap: wrap; /* Permet que els formularis es passin a una nova línia en pantalles petites */
+    display: flex;
+    gap: 5px; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
     padding: 20px;
     padding-left: 55px; 
   }
 
   .form-article {
-    flex: 1 1 28%; /* Ocupa el 48% de l'amplada per evitar que els formularis s'allunyin massa */
+    flex: 1 1 28%; 
     box-sizing: border-box;
   }
 
   .ul-img {
-    list-style: none; /* Elimina els punts de la llista */
+    list-style: none; 
     padding: 0;
     margin: 0;
-    display: flex; /* Cada imatge ocuparà tota la línia i es mourà a una de nova */
-    margin: 10px 0; /* Opcional: Espai entre les imatges */
+    display: flex;
+    margin: 10px 0; 
     flex-direction: column;
     gap: 10px; 
     padding-left: 150px;
   }
 
   .ul-img li {
-    display: flex; /* Flexbox per alinear imatge i text */
-    align-items: center; /* Alinea verticalment */
-    margin: 10px 0; /* Espai entre cada element */
+    display: flex; 
+    align-items: center; 
+    margin: 10px 0; 
     font-size:20px;
   }
 
   .ul-img img {
-    margin-right: 50px; /* Espai entre la imatge i el text */
+    margin-right: 50px; 
     height:50px;
     width: 50px;
   }
   .boton2 {
     display: inline-block;
-    margin-top: 15px; /* Baixa el botó una mica respecte al text */
+    margin-top: 15px; 
     padding: 8px 16px;
     font-size: 16px;
     color: white;
-    background-color: #080808; /* Blau per defecte */
-    text-decoration: none; /* Treu el subratllat */
+    background-color: #080808; 
+    text-decoration: none; 
     border: none;
-    border-radius: 5px; /* Cantonades arrodonides */
+    border-radius: 5px; 
     cursor: pointer;
     text-align: center;
 }
 .boton2:hover {
-    background-color: #050505; /* Canvia el color al passar el ratolí */
+    background-color: #050505; 
 }
 
 .fitxa {
-  list-style-type: none; /* Elimina els punts de la llista */
-  padding: 0; /* Opcional: elimina el marge esquerre de la llista */
-  margin: 0; /* Opcional: elimina l'espai superior o inferior de la llista */
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 .contenidorwebcam {
   display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horitzontalment el contingut */
-    justify-content: center; /* Centrar verticalment el contingut dins del contenidor */
-    text-align: center; /* Centrar el text */
-    margin: 0 auto; /* Assegurar centrat horitzontal dins del contenidor pare */
-    width: 100%; /* Ocupa tota l'amplada disponible */
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    margin: 0 auto; 
+    width: 100%; 
 }
 
 .iframe-webcam {
-  width: 1105px; /* Amplada de l'iframe */
-  height: 625px; /* Alçada de l'iframe */
-  overflow: hidden; /* Evita scrolls */
-  border: 1px solid #ccc; /* Bord suau (opcional) */
-  border-radius: 8px; /* Canto arrodonit (opcional) */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra (opcional) */
+  width: 1105px; 
+  height: 625px; 
+  overflow: hidden; 
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
   
 }
 
 .iframe-webcam iframe {
-  width: 100%; /* Ajusta l'iframe al contenidor */
-  height: 100%; /* Ajusta l'iframe al contenidor */
-  border: none; /* Elimina els marges */
+  width: 100%; 
+  height: 100%; 
+  border: none; 
 }

@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,58 +30,84 @@
   </head>
 
   <body>
-    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
-
-    <script>
-    // Array amb les rutes de les imatges
-    const imatges = [
-        '../imagenes/banners/landas1.jpeg',
-        '../imagenes/banners/landas1.jpg',
-        '../imagenes/banners/landas2.jpg',
-        '../imagenes/banners/landas3.jpg',
-        '../imagenes/banners/landas4.jpg',
-        '../imagenes/banners/landas5.jpeg',
-        
-      ];
-
-      // Selecciona una imatge aleatòria
-      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
-
-      // Aplica la imatge al 'header'
-      const header = document.getElementById('header');
-      header.style.backgroundImage = `url(${imatgeAleatoria})`;
-    </script>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="../index.html" >INICIO</a>
-        <a href="quehacer.html">QUE HACER</a>
-        <a href="noticias.html">NOTICIAS</a>
-        <a href="contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+    <!-- El header llama al script para que le devuelva que banner poner -->
+    <header id="header">
+
+      <!-- Título de la web, sobre el banner -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
     
-      </header>
+      <!-- Un script para que salga una imagen de banner aleatoria --> 
+      <script>
+
+        // Array con las rutas de las imagenes
+        const imatges = [
+          '../imagenes/banners/landas1.jpeg',
+          '../imagenes/banners/landas1.jpg',
+          '../imagenes/banners/landas2.jpg',
+          '../imagenes/banners/landas3.jpg',
+          '../imagenes/banners/landas4.jpg',
+          '../imagenes/banners/landas5.jpeg',
+          
+        ];
+
+        // Selecciona una imagen aleatoria
+        const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+        // Aplica la imagen al 'header'
+        const header = document.getElementById('header');
+        header.style.backgroundImage = `url(${imatgeAleatoria})`;
+      </script>
+    
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../index.html" >INICIO</a>
+          <a href="quehacer.html">QUE HACER</a>
+          <a href="noticias.html">NOTICIAS</a>
+          <a href="contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
+    
+    </header>
         
-      <div class="container">
-        <nav id="menu-vertical">
-          <h2>QUE HACER ?</h2>
+    <!-- Contenedor del nav y section, con la clase container -->
+    <div class="container">
+
+      <!-- Nav, que aparece los menus del apartado QUE HACER ? , con la clase menu-vertical -->
+      <nav id="menu-vertical">
+        <h2>QUE HACER ?</h2>
           <a href="quehacer.html">LUGARES</a>
           <a href="rutasverdes.html">RUTAS VERDES</a>
           <a href="acuaticas.html">ACT. ACUÁTICAS</a>
           <a href="cultura.html">CULTURA</a>
-        </nav>
+      </nav>
 
-        <section>
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
+
+        <!-- Título de esta página -->
           <h2 class="h2titulo">CULTURA</h2>
 
+          <!-- Publicación de artículos -->
           <article>
+
+            <!-- Div donde se van a alojar los artículos, con una clase -->
             <div class="contenidor-noticies">
+
+              <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
               <div class="contenidorpresentacio">
+
+                <!-- Imagen del artículo -->
                 <img src="../imagenes/lugares/cultura/sanguinet.jpeg" title="Museo Municipal del lago Sanguinet" />
                 
+                <!--  Estilo donde va a ir el texto de la noticia -->
                 <div class="contenidor-text">
+                  
+                  <!--  Titulo de la noticia -->
                   <h2 class="h2titulonoticias">MUSEO MUNICIPAL de SANGUINET</h2>
+                  
+                  <!--  Texto de contenido del artículo -->
                   <h3>
                     Sanguinet es una comuna tocando ya Arcachon (conocida capital de las ostras) y en esta comuna de más de 4000 habitantes, existe un museo del Lago, donde podemos hacer
                     un recorrido histórico desde la edad de bronce hasta nuestros días. Tambien existe, saliendo desde la oficina de Turismo, un recorrido de 4 kms por el patrimonio
@@ -90,11 +118,19 @@
                 </div>
               </div>
 
+              <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
               <div class="contenidorpresentacio">
+                
+                <!-- Imagen del artículo -->
                 <img src="../imagenes/lugares/cultura/hidroavion.jpg" title="Hidroavión de la colección Grumann Albatross">
                 
+                <!--  Estilo donde va a ir el texto de la noticia -->
                 <div class="contenidor-text">
+                  
+                  <!--  Titulo de la noticia -->
                   <h2 class="h2titulonoticias">MUSEO de la HIDROAVIACIÓN de BISCARROSSE</h2>
+                  
+                  <!--  Texto de contenido del artículo -->
                   <h3>
                     Biscarrosse es una importante comuna de las Landas, muy cerca de la Duna de Pylat (que aunque no este en las Landas, si que recomiendo su visita). Esta comuna es conocido por 
                     tener una base de hidroaviones y se pueden ver sobre volar los cielos. Existe un museo de la Hidroaviación, que está situado en el emplazamiento de la mítica antigua base
@@ -106,11 +142,19 @@
                 </div> 
               </div>
 
+              <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
               <div class="contenidorpresentacio">
+                
+                <!-- Imagen del artículo -->
                 <img src="../imagenes/lugares/cultura/montdemarsan.jpg" title="Paisaje y lobo" />
                 
+                <!--  Estilo donde va a ir el texto de la noticia -->
                 <div class="contenidor-text">
+                  
+                  <!--  Titulo de la noticia -->
                   <h2 class="h2titulonoticias">BOSQUE de ARTE CONTEMPORANEO (PARQUE NATURAL DE GASCUÑA )</h2>
+                  
+                  <!--  Texto de contenido del artículo -->
                   <h3>
                     Con una treintena de obras y otras futuras en proyecto, esparcidas a lo largo del Parque Natural Regional de Gascuña,
                     La Forêt d'Art Contemporain (FAC) tiene como objetivo desde 2009 crear en un entorno rural
@@ -127,8 +171,12 @@
         </section>
       </div>
 
+      <!-- el footer siempre aparece a lo largo y en la parte inferior de la página web -->
       <footer>
+        <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
         <p class="footer-text"></p>
+        <!-- Con esto visualizo l -->
+        <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
       </footer>
 
     </body>

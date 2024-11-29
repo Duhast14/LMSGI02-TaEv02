@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,108 +30,153 @@
   </head>
 
   <body>
-    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
-
-    <script>
-    // Array amb les rutes de les imatges
-    const imatges = [
-        '../imagenes/banners/landas1.jpeg',
-        '../imagenes/banners/landas1.jpg',
-        '../imagenes/banners/landas2.jpg',
-        '../imagenes/banners/landas3.jpg',
-        '../imagenes/banners/landas4.jpg',
-        '../imagenes/banners/landas5.jpeg',
-        
-      ];
-
-      // Selecciona una imatge aleatòria
-      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
-
-      // Aplica la imatge al 'header'
-      const header = document.getElementById('header');
-      header.style.backgroundImage = `url(${imatgeAleatoria})`;
-    </script>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="../index.html" >INICIO</a>
-        <a href="quehacer.html">QUE HACER</a>
-        <a href="noticias.html">NOTICIAS</a>
-        <a href="contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+    <!-- El header llama al script para que le devuelva que banner poner -->
+    <header id="header">
+
+      <!-- Título de la web, sobre el banner -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
     
-      </header>
+      <!-- Un script para que salga una imagen de banner aleatoria --> 
+      <script>
+
+        // Array con las rutas de las imagenes
+        const imatges = [
+          '../imagenes/banners/landas1.jpeg',
+          '../imagenes/banners/landas1.jpg',
+          '../imagenes/banners/landas2.jpg',
+          '../imagenes/banners/landas3.jpg',
+          '../imagenes/banners/landas4.jpg',
+          '../imagenes/banners/landas5.jpeg',
+          
+        ];
+
+        // Selecciona una imagen aleatoria
+        const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+        // Aplica la imagen al 'header'
+        const header = document.getElementById('header');
+        header.style.backgroundImage = `url(${imatgeAleatoria})`;
+      </script>
+    
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../index.html" >INICIO</a>
+          <a href="quehacer.html">QUE HACER</a>
+          <a href="noticias.html">NOTICIAS</a>
+          <a href="contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
+    
+    </header>
         
-      <div class="container">
-        <nav id="menu-vertical">
-          <h2>QUE HACER ?</h2>
+    <!-- Contenedor del nav y section, con la clase container -->
+    <div class="container">
+
+      <!-- Nav, que aparece los menus del apartado QUE HACER ? , con la clase menu-vertical -->
+      <nav id="menu-vertical">
+        <h2>QUE HACER ?</h2>
           <a href="quehacer.html">LUGARES</a>
           <a href="rutasverdes.html">RUTAS VERDES</a>
-          <a href="acuaticas.html">ACT. ACUATICAS</a>
+          <a href="acuaticas.html">ACT. ACUÁTICAS</a>
           <a href="cultura.html">CULTURA</a>
-        </nav>
+      </nav>
+      
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
 
-        <section>
-          <h2 class="h2titulo">ACTIVIDADES ACUÁTICAS</h2>
+        <!-- Título de esta página -->
+        <h2 class="h2titulo">ACTIVIDADES ACUÁTICAS</h2>
 
-          <article>
-            <div class="contenidor-noticies">
-              <div class="contenidorpresentacio">
-                <img src="../imagenes/lugares/acuaticas/txalupa.jpg" title="Port Miniature" />
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">PORT EN MINIATURE (SOUSTONS)</h2>
-                  <h3>
-                    En Soustons, aunque cerca de la playa y a tiro de piedra de Vieux-Bocau, está el lago de Pinsolles. Aqui puedes conducir nuestras réplicas de barcos eléctricos
-                    con la familia. Es una manera de pasar un momento agradable en familia, mientras se aprecia la naturaleza salvaje del lago marino. Hay una zona de picnic, 
-                    se puede pasear a pie o en bicicleta alrededor del lago. Cerca también hay un lago con salida al mar con una isla en medio.<br>
+        <!-- Publicación de artículos -->
+        <article>
 
-                    <a href="./acuaticas/miniature.html" class="boton2">VER MÁS</a>
-                  </h3>
-                </div>
+          <!-- Div donde se van a alojar los artículos, con una clase -->
+          <div class="contenidor-noticies">
+
+           <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
+
+              <!-- Imagen del artículo -->
+              <img src="../imagenes/lugares/acuaticas/txalupa.jpg" title="Port Miniature" />
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
+
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">PORT EN MINIATURE (SOUSTONS)</h2>
+
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  En Soustons, aunque cerca de la playa y a tiro de piedra de Vieux-Bocau, está el lago de Pinsolles. Aqui puedes conducir nuestras réplicas de barcos eléctricos
+                  con la familia. Es una manera de pasar un momento agradable en familia, mientras se aprecia la naturaleza salvaje del lago marino. Hay una zona de picnic, 
+                  se puede pasear a pie o en bicicleta alrededor del lago. Cerca también hay un lago con salida al mar con una isla en medio.<br>
+
+                  <a href="./acuaticas/miniature.html" class="boton2">VER MÁS</a>
+                </h3>
               </div>
+            </div>
 
-              <div class="contenidorpresentacio">
-                <img class="fotillos" src="../imagenes/lugares/acuaticas/hossegor.jpg" title="Surfear en Hossegor">
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">LANDAS, EL PARAISO DEL SURFISTA</h2>
-                  <h3>
-                    Landas y su costa es un paraiso para un surfero. En los múltiples pueblos costeros hay multitud de escuelas de surf, para iniciarte o si ya eres un 
-                    surfero experto puedes coger algunas olas en las playas.<br>
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
 
-                    <a href="./acuaticas/surf.html" class="boton2">VER MÁS</a>
-                  </h3>
-                </div> 
-              </div>
+              <!-- Imagen del artículo -->
+              <img class="fotillos" src="../imagenes/lugares/acuaticas/hossegor.jpg" title="Surfear en Hossegor">
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
 
-              <div class="contenidorpresentacio">
-                <img class="fotillos" src="../imagenes/lugares/acuaticas/canoa.jpg" title="Canoas" />
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">AU FIL DE L'EAU (VIELLE-St.-GIRONS)</h2>
-                  <h3>
-                    La playa del lago en Vielle-St.-Girons, ofrece una zona verde y arbolada en la que resulta agradable pasar el día. 
-                    El centro de deportes acuáticos "Au fil de l'eau" ofrece un paseo en canoa, que le llaman: 3 Universos, 3 descubrimientos:  que
-                    pasas por el lago, el pantano y río. También hay otro tipo de actividades como la Escuela de vela y disfrutar de otro tipo 
-                    de embarcaciones (barcos de pedales, padelsurf, etc.)<br>
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">LANDAS, EL PARAISO DEL SURFISTA</h2>
 
-                    <a href="./acuaticas/fildeleau.html" class="boton2">VER MÁS</a>                   
-                  </h3>
-                </div>
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  Landas y su costa es un paraiso para un surfero. En los múltiples pueblos costeros hay multitud de escuelas de surf, para iniciarte o si ya eres un 
+                  surfero experto puedes coger algunas olas en las playas.<br>
+
+                  <a href="./acuaticas/surf.html" class="boton2">VER MÁS</a>
+                </h3>
               </div> 
             </div>
 
-          </article>
-        </section>
-      </div>
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
 
-      <footer>
-        <p class="footer-text"></p>
-        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-      </footer>
+              <!-- Imagen del artículo -->
+              <img class="fotillos" src="../imagenes/lugares/acuaticas/canoa.jpg" title="Canoas" />
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
 
-    </body>
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">AU FIL DE L'EAU (VIELLE-St.-GIRONS)</h2>
+                
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  La playa del lago en Vielle-St.-Girons, ofrece una zona verde y arbolada en la que resulta agradable pasar el día. 
+                  El centro de deportes acuáticos "Au fil de l'eau" ofrece un paseo en canoa, que le llaman: 3 Universos, 3 descubrimientos:  que
+                  pasas por el lago, el pantano y río. También hay otro tipo de actividades como la Escuela de vela y disfrutar de otro tipo 
+                  de embarcaciones (barcos de pedales, padelsurf, etc.)<br>
+
+                  <a href="./acuaticas/fildeleau.html" class="boton2">VER MÁS</a>                   
+                </h3>
+              </div>
+            </div> 
+          </div>
+
+        </article>
+      </section>
+    </div>
+
+    <!-- el footer siempre aparece a lo largo y en la parte inferior de la página web -->
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+  </body>
 
 </html>

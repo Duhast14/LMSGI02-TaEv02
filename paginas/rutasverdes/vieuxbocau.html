@@ -1,13 +1,16 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,71 +31,94 @@
   </head>
 
   <body>
+
+    <!-- Solo pongo una imagen acorde con el lugar -->
     <header id="header3" title = "La Vélodyssée" style="background-image: url('../../imagenes/banners/velodyssee.jpg');">
-        <h1 class="text-outline2">LANDAS, UN PARAISO</h1>
-    
-    <nav>
-      <ul class="text-outline">
-        <a href="../../index.html">INICIO</a>
-        <a href="../quehacer.html">QUE HACER</a>
-        <a href="../noticias.html">NOTICIAS</a>
-        <a href="../contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+      <h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+      
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../../index.html">INICIO</a>
+          <a href="../quehacer.html">QUE HACER</a>
+          <a href="../noticias.html">NOTICIAS</a>
+          <a href="../contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
     
     </header>
-        
-      <div class="container2">
+     
+    <!-- Un contendor que contiene dos divs -->
+    <div class="container2">
 
-        <section>
-            <h2 class="h2titulo">VUELTA AL LAGO MARIN (VIEUX-BOCAU)</h2>
-  
-            <article>
-              <div class="contenidor-noticies">
-                <div class="contenidorpresentacio">
-                    <img src="../../imagenes/lugares/rutasverdes/mapas/lagomarin.PNG" title = "Mapa Lago Marin"/>
-                    
-                    
-                    <div class="contenidor-text">
-                      
-                      <h3>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor metus lacinia ridiculus condimentum proin viverra odio. 
-                        Mi sollicitudin eros leo aliquet odio habitant. Per aliquam erat aliquet phasellus habitant a ridiculus suspendisse. 
-                        Lobortis nulla ornare potenti ligula sagittis iaculis conubia. Tortor tincidunt natoque porttitor varius curae praesent.<br><br>
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
 
-                        Pellentesque congue sit conubia diam laoreet himenaeos auctor. Ullamcorper volutpat arcu libero aenean turpis maximus 
-                        ullamcorper maximus. Vehicula mus pharetra vestibulum viverra faucibus justo maecenas lacus. Tellus bibendum nisl adipiscing 
-                        est class fermentum amet. Rhoncus facilisis cursus ridiculus mi fusce; purus nunc arcu vitae. Augue morbi primis hac ornare 
-                        fames, sagittis habitasse tempor dictum. Enim at at aenean vel ante a. Id turpis curae maecenas imperdiet fusce taciti tincidunt vitae.
-                        <br><br>
-                        <a href="../../descargas/Plano-Vieux-Boucau.jpg" target="new" class="boton2">DESCARGA EL MAPA COMPLETO</a>
-                      </h3>
-                    </div>
-                  </div>
-    
-                  <div class="contenidorpresentacio">
+          <!-- Título de esta página -->
+        <h2 class="h2titulo">VUELTA AL LAGO MARIN (VIEUX-BOCAU)</h2>
+
+        <!-- Publicación del artículo -->
+        <article>
+
+          <!-- Div donde se van a alojar los artículos, con una clase -->
+          <div class="contenidor-noticies">
+
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
+
+              <!-- Imagen del artículo -->
+              <img src="../../imagenes/lugares/rutasverdes/mapas/lagomarin.PNG" title = "Mapa Lago Marin"/>
                     
-                    <div class="contenidor-text">
-                      <h2 class="h2titulonoticias">INFORMACIÓN</h2>
-                      <h3>
+              <!--  Estilo donde va a ir el texto de la noticia -->    
+              <div class="contenidor-text">
+                  
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor metus lacinia ridiculus condimentum proin viverra odio. 
+                  Mi sollicitudin eros leo aliquet odio habitant. Per aliquam erat aliquet phasellus habitant a ridiculus suspendisse. 
+                  Lobortis nulla ornare potenti ligula sagittis iaculis conubia. Tortor tincidunt natoque porttitor varius curae praesent.<br><br>
+
+                  Pellentesque congue sit conubia diam laoreet himenaeos auctor. Ullamcorper volutpat arcu libero aenean turpis maximus 
+                  ullamcorper maximus. Vehicula mus pharetra vestibulum viverra faucibus justo maecenas lacus. Tellus bibendum nisl adipiscing 
+                  est class fermentum amet. Rhoncus facilisis cursus ridiculus mi fusce; purus nunc arcu vitae. Augue morbi primis hac ornare 
+                  fames, sagittis habitasse tempor dictum. Enim at at aenean vel ante a. Id turpis curae maecenas imperdiet fusce taciti tincidunt vitae.
+                  <br><br>
+                  <a href="../../descargas/Plano-Vieux-Boucau.jpg" target="new" class="boton2">DESCARGA EL MAPA COMPLETO</a>
+                </h3>
+              </div>
+            </div>
+              
+            <!-- Div para la información sobre el tramo -->
+            <div class="contenidorpresentacio">
+                
+              <!--  Estilo donde va a ir el texto dde la info -->  
+              <div class="contenidor-text">
+
+                <!--  Titulo -->  
+                <h2 class="h2titulonoticias">INFORMACIÓN</h2>
+                  
+                <!--  Lista con datos -->  
+                <h3>              
+                  <ul>
+                    <li>DISTANCIA : 4 km</li>
+                    <li>DIFICULDAD : MODERADA</li>
+                    <li>INFO EN WIKILOC : <a href="https://es.wikiloc.com/rutas-senderismo/vieux-boucau-les-bains-vuelta-lago-19596856" target="new">WIKILOC</a></li>  
+                  </ul>
                         
-                        <ul>
-                            <li>DISTANCIA : 4 km</li>
-                            <li>DIFICULDAD : MODERADA</li>
-                            <li>INFO EN WIKILOC : <a href="https://es.wikiloc.com/rutas-senderismo/vieux-boucau-les-bains-vuelta-lago-19596856" target="new">WIKILOC</a></li>  
-                        </ul>
-                        
-                      </h3>
-                    </div> 
-                  </div>
-        </section>
-      </div>
+                </h3>
+            </div> 
+          </div>
+      </section>
+    </div>
 
-      <footer>
-        <p class="footer-text"></p>
-        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-      </footer>
+    <!-- el footer siempre aparece a lo largo y en la parte inferior de la página web -->
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
 
-    </body>
+  </body>
 
 </html>

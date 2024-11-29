@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,11 +30,16 @@
   </head>
 
   <body>
-    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
 
-    <script>
-    // Array amb les rutes de les imatges
-      const imatges = [
+    <!-- El header llama al script para que le devuelva que banner poner -->
+    <header id="header">
+      <!-- Título de la web, sobre el banner -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
+
+      <!-- Un script para que salga una imagen de banner aleatoria --> 
+      <script>
+      // Array con las rutas de las imagenes
+        const imatges = [
         'imagenes/banners/landas1.jpeg',
         'imagenes/banners/landas1.jpg',
         'imagenes/banners/landas2.jpg',
@@ -40,69 +47,82 @@
         'imagenes/banners/landas4.jpg',
         'imagenes/banners/landas5.jpeg',
         
-      ];
+        ];
 
-      // Selecciona una imatge aleatòria
-      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+        // Selecciona una imagen aleatoria
+        const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
 
-      // Aplica la imatge al 'header'
-      const header = document.getElementById('header');
-      header.style.backgroundImage = `url(${imatgeAleatoria})`;
-    </script>
+        // Aplica la imagen al 'header'
+        const header = document.getElementById('header');
+        header.style.backgroundImage = `url(${imatgeAleatoria})`;
+      </script>
+
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno -->
+      <nav>
+        <ul class="text-outline2">
+          <a href="index.html" >INICIO</a>
+          <a href="paginas/quehacer.html">QUE HACER</a>
+          <a href="paginas/noticias.html">NOTICIAS</a>
+          <a href="paginas/contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="paginas/index.html" >INICIO</a>
-        <a href="paginas/quehacer.html">QUE HACER</a>
-        <a href="paginas/noticias.html">NOTICIAS</a>
-        <a href="paginas/contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
-    
-      </header>
+    </header>
         
-      <div class="container">
-        <nav id="menu-vertical">
-          <h2>
-            QUE HACER ?
-          </h2>
+    <!-- Contenedor del nav y section, con la clase container -->  
+    <div class="container">
+
+      <!-- Nav, que aparece los menus del apartado QUE HACER ? , con la clase menu-vertical -->
+      <nav id="menu-vertical">
+        <h2>QUE HACER ?</h2>
           <a href="paginas/quehacer.html">LUGARES</a>
           <a href="paginas/rutasverdes.html">RUTAS VERDES</a>
           <a href="paginas/acuaticas.html">ACT. ACUÁTICAS</a>
           <a href="paginas/cultura.html">CULTURA</a>
-        </nav>
+      </nav>
 
-        <section>
-          <article>
-            <h2 class="h2titulo">
-              BIENVENIDOS A NUESTRA WEB
-            </h2>
-            <h2>
-              Verdad que has oido hablar sobre Las LANDAS, pero que es ? donde está ? que hacer ?
-            </h2>
-            <div class="contenidorpresentacio">
-              <img src="imagenes/escudo landas.jfif" title="Escudo de armas de las Landas" />
-              <h3>
-                  Bienvenidos a la web sobre las Landas, un paraíso (para nosotros), entre Euskalherria y Bordeaux.<br><br>
-                  Es un departamento de Francia situado en el sudoeste del país, perteneciente, desde el 1 de enero de 2016, a la nueva región de Nueva Aquitania.
-                  Limita al norte con Gironda, al este con Lot y Garona y Gers, al sur con los Pirineos Atlánticos y al oeste con el océano Atlántico (Costa de Plata).<br><br>​
-                  Tiene su prefectura en Mont-de-Marsan y una subprefectura en Dax. Ambas ciudades están separadas por algo más de 50 kms.<br><br>
-                  Es el lugar prefecto para prácticar surf en sus largas, arenosas y múltiples playas, perderse por el interior con cantidad de vías verdes, sea a pie o en bicicleta
-                  entre bosques de pinos, multitud de lagos y pueblitos con encanto y con mercados para comprar sus productos locales y su producto estrella: el pato;
-                  o por que no, meterse con la familia en sus numerosos campings con multitud de actividades.<br><br>
-                  La intención de esta web es informarte de que puedes hacer en tus vacaciones o visitas a esta zona, por que lo tienes a dos horitas como mínimo desde Euskalherria
-                  que personalmente, nos carga de energía, nos relaja y disfrutamos de la naturaleza.
-              </h3>
-            </div>
+      <!-- Section, que aparece el único artículo que hay -->
+      <section>
 
-          </article>
-        </section>
-      </div>
+        <!-- Publicación de artículos -->
+        <article>
 
-      <footer>
-        <p class="footer-text"></p>
-      </footer>
+          <!-- Mensaje de bienvenida -->
+          <h2 class="h2titulo">BIENVENIDOS A NUESTRA WEB</h2>
+          
+          <h2>Verdad que has oido hablar sobre Las LANDAS, pero que es ? donde está ? que hacer ?</h2>
+          
+          <!-- Div con imagen y texto -->
+          <div class="contenidorpresentacio">
 
-    </body>
+            <!-- Imagen del artículo -->
+            <img src="imagenes/escudo landas.jfif" title="Escudo de armas de las Landas" />
+
+            <!--  Texto de contenido del artículo -->
+            <h3>
+              Bienvenidos a la web sobre las Landas, un paraíso (para nosotros), entre Euskalherria y Bordeaux.<br><br>
+              Es un departamento de Francia situado en el sudoeste del país, perteneciente, desde el 1 de enero de 2016, a la nueva región de Nueva Aquitania.
+              Limita al norte con Gironda, al este con Lot y Garona y Gers, al sur con los Pirineos Atlánticos y al oeste con el océano Atlántico (Costa de Plata).<br><br>​
+              Tiene su prefectura en Mont-de-Marsan y una subprefectura en Dax. Ambas ciudades están separadas por algo más de 50 kms.<br><br>
+              Es el lugar prefecto para prácticar surf en sus largas, arenosas y múltiples playas, perderse por el interior con cantidad de vías verdes, sea a pie o en bicicleta
+              entre bosques de pinos, multitud de lagos y pueblitos con encanto y con mercados para comprar sus productos locales y su producto estrella: el pato;
+              o por que no, meterse con la familia en sus numerosos campings con multitud de actividades.<br><br>
+              La intención de esta web es informarte de que puedes hacer en tus vacaciones o visitas a esta zona, por que lo tienes a dos horitas como mínimo desde Euskalherria
+              que personalmente, nos carga de energía, nos relaja y disfrutamos de la naturaleza.
+            </h3>
+          </div>
+
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+  </body>
 
 </html>

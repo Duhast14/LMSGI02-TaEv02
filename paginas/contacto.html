@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,30 +30,38 @@
   </head>
 
   <body>
-    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
+    
+    <!-- El header llama al script para que le devuelva que banner poner -->
+    <header id="header">
 
+      <!-- Título de la web, sobre el banner -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
+    
+      <!-- Un script para que salga una imagen de banner aleatoria --> 
       <script>
-    // Array amb les rutes de les imatges
-    const imatges = [
-        '../imagenes/banners/landas1.jpeg',
-        '../imagenes/banners/landas1.jpg',
-        '../imagenes/banners/landas2.jpg',
-        '../imagenes/banners/landas3.jpg',
-        '../imagenes/banners/landas4.jpg',
-        '../imagenes/banners/landas5.jpeg',
-        
-      ];
 
-        // Selecciona una imatge aleatòria
+        // Array con las rutas de las imagenes
+        const imatges = [
+          '../imagenes/banners/landas1.jpeg',
+          '../imagenes/banners/landas1.jpg',
+          '../imagenes/banners/landas2.jpg',
+          '../imagenes/banners/landas3.jpg',
+          '../imagenes/banners/landas4.jpg',
+          '../imagenes/banners/landas5.jpeg',
+          
+        ];
+
+        // Selecciona una imagen aleatoria
         const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
 
-        // Aplica la imatge al 'header'
+        // Aplica la imagen al 'header'
         const header = document.getElementById('header');
         header.style.backgroundImage = `url(${imatgeAleatoria})`;
       </script>
-
+    
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
       <nav>
-        <ul class="text-outline">
+        <ul class="text-outline2">
           <a href="../index.html" >INICIO</a>
           <a href="quehacer.html">QUE HACER</a>
           <a href="noticias.html">NOTICIAS</a>
@@ -61,11 +71,18 @@
     
     </header>
     
+    <!-- Creo un container que iran dos articulos, uno sera el formulario de contacto y el otro las redes sociales --> 
     <div class="form-container">
+
+      <!-- Formulario, envia un mail --> 
       <article class="form-article">
         <form action="mailto:carrodriguez@birt.eus" method="POST" enctype="text/plain">
           <fieldset>
+
+            <!-- Titulo del formulario --> 
             <legend><h3>CONTACTA CONMIGO</h3></legend>
+
+            <!-- Componentes del formulario --> 
             <label>Quieres añadir alguna actividad o algún comentario o corregir algún error. Este es tu sitio y no dudes en enviarmelo.</label>
             <label>Nombre/Nick: </label>
             <input type="text" name="nom" value="Nombre/Nick">
@@ -84,10 +101,13 @@
           </fieldset>
         </form>
       </article>
-  
+      
+      <!-- Redes sociales, el enlace es a la página principal de la red social --> 
       <article class="form-article">
         <form>
           <fieldset>
+
+            <!-- Titulo del formulario --> 
             <legend><h3>DONDE ESTOY ?</h3></legend>
             <ul class="ul-img">
               <li><img src="../imagenes/logos/Bluesky_Logo.svg.png" title="BlueSky" /><a href="https://bsky.app/" target="new">BLUESKY</a></li>
@@ -104,7 +124,9 @@
 
     <footer>
       <p class="footer-text"></p>
+      <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
     </footer>
-    </body>
+
+  </body>
 
 </html>

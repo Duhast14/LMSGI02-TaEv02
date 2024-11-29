@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,104 +30,148 @@
   </head>
 
   <body>
-    <header id="header"><h1 class="text-outline2">LANDAS, UN PARAISO</h1>
-
-    <script>
-    // Array amb les rutes de les imatges
-    const imatges = [
-        '../imagenes/banners/landas1.jpeg',
-        '../imagenes/banners/landas1.jpg',
-        '../imagenes/banners/landas2.jpg',
-        '../imagenes/banners/landas3.jpg',
-        '../imagenes/banners/landas4.jpg',
-        '../imagenes/banners/landas5.jpeg',
-        
-      ];
-
-      // Selecciona una imatge aleatòria
-      const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
-
-      // Aplica la imatge al 'header'
-      const header = document.getElementById('header');
-      header.style.backgroundImage = `url(${imatgeAleatoria})`;
-    </script>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="../index.html" >INICIO</a>
-        <a href="quehacer.html">QUE HACER</a>
-        <a href="noticias.html">NOTICIAS</a>
-        <a href="contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+    <!-- El header llama al script para que le devuelva que banner poner -->
+    <header id="header">
+
+      <!-- Título de la web, sobre el banner -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
     
-      </header>
-        
-      <div class="container">
-        <nav id="menu-vertical">
-          <h2>QUE HACER ?</h2>
+      <!-- Un script para que salga una imagen de banner aleatoria --> 
+      <script>
+
+        // Array con las rutas de las imagenes
+        const imatges = [
+          '../imagenes/banners/landas1.jpeg',
+          '../imagenes/banners/landas1.jpg',
+          '../imagenes/banners/landas2.jpg',
+          '../imagenes/banners/landas3.jpg',
+          '../imagenes/banners/landas4.jpg',
+          '../imagenes/banners/landas5.jpeg',
+          
+        ];
+
+        // Selecciona una imagen aleatoria
+        const imatgeAleatoria = imatges[Math.floor(Math.random() * imatges.length)];
+
+        // Aplica la imagen al 'header'
+        const header = document.getElementById('header');
+        header.style.backgroundImage = `url(${imatgeAleatoria})`;
+      </script>
+    
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../index.html" >INICIO</a>
+          <a href="quehacer.html">QUE HACER</a>
+          <a href="noticias.html">NOTICIAS</a>
+          <a href="contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
+    
+    </header>
+      
+    <!-- Contenedor del nav y section, con la clase container -->
+    <div class="container">
+
+      <!-- Nav, que aparece los menus del apartado QUE HACER ? , con la clase menu-vertical -->
+      <nav id="menu-vertical">
+        <h2>QUE HACER ?</h2>
           <a href="quehacer.html">LUGARES</a>
           <a href="rutasverdes.html">RUTAS VERDES</a>
           <a href="acuaticas.html">ACT. ACUÁTICAS</a>
           <a href="cultura.html">CULTURA</a>
-        </nav>
+      </nav>
 
-        <section>
-          <h2 class="h2titulo">RUTAS VERDES</h2>
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
 
-          <article>
-            <div class="contenidor-noticies">
-              <div class="contenidorpresentacio">
-                <img src="../imagenes/lugares/rutasverdes/bicislandas.jpg" title="Paseando por las Landas" />
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">LA VÉLODYSSÉE</h2>
-                  <h3>
-                    La Vélodyssée es nombre que recibe la ruta principal de las Landas, forma parte de una gran ruta francesa que va desde Roscoff, en la Bretaña, hasta Hendaia.
-                    Empieza desde el Bassin de Arcachon, serpenteando entre bosques y lagos. Esta dividido en 8 étapas y tiene, aproximadamente unos 140 kms<br>
+      <!-- Título de esta página -->
+      <h2 class="h2titulo">RUTAS VERDES</h2>
 
-                    <a href="./rutasverdes/velodyssee.html" class="boton2">VER MÁS</a>
-                  </h3>
-                </div>
+        <!-- Publicación de artículos --> 
+        <article>
+
+          <!-- Div donde se van a alojar los artículos, con una clase -->
+          <div class="contenidor-noticies">
+
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
+
+              <!-- Imagen del artículo -->
+              <img src="../imagenes/lugares/rutasverdes/bicislandas.jpg" title="Paseando por las Landas" />
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
+
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">LA VÉLODYSSÉE</h2>
+
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  La Vélodyssée es nombre que recibe la ruta principal de las Landas, forma parte de una gran ruta francesa que va desde Roscoff, en la Bretaña, hasta Hendaia.
+                  Empieza desde el Bassin de Arcachon, serpenteando entre bosques y lagos. Esta dividido en 8 étapas y tiene, aproximadamente unos 140 kms<br>
+
+                  <a href="./rutasverdes/velodyssee.html" class="boton2">VER MÁS</a>
+                </h3>
               </div>
+            </div>
 
-              <div class="contenidorpresentacio">
-                <img src="../imagenes/lugares/rutasverdes/mimizan.jpg" title="Ruta Mimizan">
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">MIMIZAN-PLAGE - BIAS </h2>
-                  <h3>
-                    Esta ruta une Mimizan Plage, con Mimizan Bourg (centro Mimizan) y Bias. Esta ruta enlaza con la Vélodyssée y con la ruta Mimizan con Pontenx-les-Forges. Es una pista
-                    de reciente construcción y, por lo tanto, poco transitada. Esta ruta une con los pueblos situados al sur, principalmente con St.Julien-en-Born, pasando por Contis-Plage.<br>
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
 
-                    <a href="./rutasverdes/mimizan.html" class="boton2">VER MÁS</a>
-                  </h3>
-                </div> 
-              </div>
+              <!-- Imagen del artículo -->
+              <img src="../imagenes/lugares/rutasverdes/mimizan.jpg" title="Ruta Mimizan">
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
 
-              <div class="contenidorpresentacio">
-                <img src="../imagenes/lugares/rutasverdes/vieuxbocau.jpg" title="Lago Marin (Vieux-Bocau)" />
-                
-                <div class="contenidor-text">
-                  <h2 class="h2titulonoticias">VUELTA AL LAGO DE VIEUX-BOCAU</h2>
-                  <h3>
-                    Esta bonita ruta de unos 4 kms, consiste en dar la vuelta al lago Marin de Pont D'Albret. Esta pista asfaltada discurre alrededor del lago y no necesita más indicaciones.<br>
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">MIMIZAN-PLAGE - BIAS </h2>
 
-                    <a href="./rutasverdes/vieuxbocau.html" class="boton2">VER MÁS</a>
-                  </h3>
-                </div>
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  Esta ruta une Mimizan Plage, con Mimizan Bourg (centro Mimizan) y Bias. Esta ruta enlaza con la Vélodyssée y con la ruta Mimizan con Pontenx-les-Forges. Es una pista
+                  de reciente construcción y, por lo tanto, poco transitada. Esta ruta une con los pueblos situados al sur, principalmente con St.Julien-en-Born, pasando por Contis-Plage.<br>
+
+                  <a href="./rutasverdes/mimizan.html" class="boton2">VER MÁS</a>
+                </h3>
               </div> 
             </div>
 
-          </article>
-        </section>
-      </div>
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
 
-      <footer>
-        <p class="footer-text"></p>
-        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-      </footer>
+              <!-- Imagen del artículo -->
+              <img src="../imagenes/lugares/rutasverdes/vieuxbocau.jpg" title="Lago Marin (Vieux-Bocau)" />
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->
+              <div class="contenidor-text">
 
-    </body>
+                <!--  Estilo del titulo de la noticia -->
+                <h2 class="h2titulonoticias">VUELTA AL LAGO DE VIEUX-BOCAU</h2>
+
+                <!--  Texto de contenido del artículo -->
+                <h3>
+                  Esta bonita ruta de unos 4 kms, consiste en dar la vuelta al lago Marin de Pont D'Albret. Esta pista asfaltada discurre alrededor del lago y no necesita más indicaciones.<br>
+
+                  <a href="./rutasverdes/vieuxbocau.html" class="boton2">VER MÁS</a>
+                </h3>
+              </div>
+            </div> 
+          </div>
+
+        </article>
+      </section>
+    </div>
+
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+  </body>
 
 </html>

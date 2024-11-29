@@ -1,13 +1,15 @@
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
-<!-- Nombre: Carles Rodriguez i Rovira ----------------------------------------------------------------------------------------------------------------------------->
-<!-- Fecha: 29/10/2024  -------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- Modulo: Lenguaje de marcas ------------------------------------------------------------------------------------------------------------------------------------>
-<!-- UD01 Intercambio de información en la Web. -------------------------------------------------------------------------------------------------------------------->
-<!-- LMSGI02 TaEv02. Primer sitio web con formato ------------------------------------------------------------------------------------------------------------------>
-<!-- Link Autoevaluación : -->
-<!--   -->
-<!--  ------------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Nombre: Carles Rodriguez i Rovira -------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Fecha: 29/11/2024  ----------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- Modulo: Lenguaje de marcas --------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- UD01 Intercambio de información en la Web. ----------------------------------------------------------------------------------------------------------------------------->
+<!-- LMSGI02 TaEv02. Primer sitio web con formato --------------------------------------------------------------------------------------------------------------------------->
+<!-- Link Autoevaluación : https://docs.google.com/document/d/1fwSRu1M66fRqFZqzD_jMfwXxxNvo6b_6/edit?usp=drive_link&ouid=105214531071759164448&rtpof=true&sd=true ----------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!-- En esta unidad didáctica se pide crear un sitio web en el que se muestre información sobre algo. Puede ser el catálogo de una empresa, una web de reseñas de libros, --->
+<!-- de recetas... En este caso, yo he recogido una especie de guía para la estancia en las Landas, Francia. En la web puedes encontrar, noticias, actividades culturales, -->
+<!-- actividades familiares, deportivas y lugares para visitar. También se ha añadido un formulario de contacto y donde puedes encontrarme en redes sociales ---------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <!-- Declaración del doctype en HTML5 -->
 <!doctype html>
@@ -28,71 +30,96 @@
   </head>
 
   <body>
-    <header id="header2" title = "Exposición en Museo del Lago" style="background-image: url('../../imagenes/banners/foret.jpg');">
-        <h1 class="text-outline2">LANDAS, UN PARAISO</h1>
     
-    <nav>
-      <ul class="text-outline">
-        <a href="../../index.html" >INICIO</a>
-        <a href="../quehacer.html">QUE HACER</a>
-        <a href="../noticias.html">NOTICIAS</a>
-        <a href="../contacto.html">CONTACTO</a>
-      </ul>
-    </nav>
+    <!-- Solo pongo una imagen acorde con el lugar -->
+    <header id="header2" title = "Exposición en Museo del Lago" style="background-image: url('../../imagenes/banners/foret.jpg');">
+      
+      <!-- TITULO DE LA WEB -->
+      <h1 class="text-outline">LANDAS, UN PARAISO</h1>
+      
+      <!-- Links de las páginas que aparecen en el banner, tienen una clase para el relleno --> 
+      <nav>
+        <ul class="text-outline2">
+          <a href="../../index.html">INICIO</a>
+          <a href="../quehacer.html">QUE HACER</a>
+          <a href="../noticias.html">NOTICIAS</a>
+          <a href="../contacto.html">CONTACTO</a>
+        </ul>
+      </nav>
     
     </header>
         
       <div class="container2">
 
-        <section>
-            <h2 class="h2titulo">BOSQUE DEL ARTE CONTEMPORANEO (PARQUE NATURAL GASCUÑA)</h2>
+      <!-- Section, que aparece con los artíclos que consta esta página -->
+      <section>
+
+        <!-- Título de esta página -->
+        <h2 class="h2titulo">BOSQUE DEL ARTE CONTEMPORANEO (PARQUE NATURAL GASCUÑA)</h2>
   
-            <article>
-              <div class="contenidor-noticies">
-                <div class="contenidorpresentacio">
-                    <img src="../../imagenes/lugares/cultura/foret.jpg" title = "Apolo en el bosque"/>
-                    
-                    <div class="contenidor-text">
-                      
-                      <h3>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor metus lacinia ridiculus condimentum proin viverra odio. 
-                        Mi sollicitudin eros leo aliquet odio habitant. Per aliquam erat aliquet phasellus habitant a ridiculus suspendisse. 
-                        Lobortis nulla ornare potenti ligula sagittis iaculis conubia. Tortor tincidunt natoque porttitor varius curae praesent.<br><br>
+        <!-- Publicación del artículo -->
+        <article>
 
-                        Pellentesque congue sit conubia diam laoreet himenaeos auctor. Ullamcorper volutpat arcu libero aenean turpis maximus 
-                        ullamcorper maximus. Vehicula mus pharetra vestibulum viverra faucibus justo maecenas lacus. Tellus bibendum nisl adipiscing 
-                        est class fermentum amet. Rhoncus facilisis cursus ridiculus mi fusce; purus nunc arcu vitae. Augue morbi primis hac ornare 
-                        fames, sagittis habitasse tempor dictum. Enim at at aenean vel ante a. Id turpis curae maecenas imperdiet fusce taciti tincidunt vitae.
+          <!-- Div donde se van a alojar los artículos, con una clase -->
+          <div class="contenidor-noticies">
+
+            <!-- Div para un articulo, tiene una imagen y otro contenedor para el texto -->
+            <div class="contenidorpresentacio">
+
+              <!-- Imagen del artículo -->
+              <img src="../../imagenes/lugares/cultura/foret.jpg" title = "Apolo en el bosque"/>
+              
+              <!--  Estilo donde va a ir el texto de la noticia -->   
+              <div class="contenidor-text">
+                
+              <!--  Texto de contenido del artículo -->
+                <h3>
+                  Lorem ipsum odor amet, consectetuer adipiscing elit. Porttitor metus lacinia ridiculus condimentum proin viverra odio. 
+                  Mi sollicitudin eros leo aliquet odio habitant. Per aliquam erat aliquet phasellus habitant a ridiculus suspendisse. 
+                  Lobortis nulla ornare potenti ligula sagittis iaculis conubia. Tortor tincidunt natoque porttitor varius curae praesent.<br><br>
+
+                  Pellentesque congue sit conubia diam laoreet himenaeos auctor. Ullamcorper volutpat arcu libero aenean turpis maximus 
+                  ullamcorper maximus. Vehicula mus pharetra vestibulum viverra faucibus justo maecenas lacus. Tellus bibendum nisl adipiscing 
+                  est class fermentum amet. Rhoncus facilisis cursus ridiculus mi fusce; purus nunc arcu vitae. Augue morbi primis hac ornare 
+                  fames, sagittis habitasse tempor dictum. Enim at at aenean vel ante a. Id turpis curae maecenas imperdiet fusce taciti tincidunt vitae.
+                  <br><br>
+                </h3>
+              </div>
+            </div>
     
-                      </h3>
-                    </div>
-                  </div>
-    
-                  <div class="contenidorpresentacio">
-                    
-                    <div class="contenidor-text">
-                      <h2 class="h2titulonoticias">DATOS DEL MUSEO</h2>
-                      <h3>
-                        
-                        <ul class="fitxa">
-                            <li>PERIODO DE APERTURA: OBRAS EN BOSQUE</li>
-                            <li>PRECIO ENTRADA: NADA</li>
-                            <li>DIRECCIÓN: 33 route de Bayonne, 33830 Belin Beliet</li>
-                            <li>TELÉFONO: - </li>
-                            <li>MAIL: - </li>
-                            <li>WEBSITE: <a href="https://www.laforetdartcontemporain.com/" target="new">https://www.laforetdartcontemporain.com/</a></li>
-                        </ul>
-                        
-                      </h3>
-                    </div> 
-                  </div>
-        </section>
-      </div>
+            <!-- Div para la información sobre el tramo -->
+            <div class="contenidorpresentacio">
+              
+              <!--  Estilo donde va a ir el texto dde la info -->  
+              <div class="contenidor-text">
 
-      <footer>
-        <p class="footer-text"></p>
-      </footer>
+                <!--  Titulo -->  
+                <h2 class="h2titulonoticias">DATOS DEL MUSEO</h2>
+                
+                <!--  Lista con datos --> 
+                <h3>  
+                  <ul class="fitxa">
+                    <li>PERIODO DE APERTURA: OBRAS EN BOSQUE</li>
+                    <li>PRECIO ENTRADA: NADA</li>
+                    <li>DIRECCIÓN: 33 route de Bayonne, 33830 Belin Beliet</li>
+                    <li>TELÉFONO: - </li>
+                    <li>MAIL: - </li>
+                    <li>WEBSITE: <a href="https://www.laforetdartcontemporain.com/" target="new">https://www.laforetdartcontemporain.com/</a></li>
+                  </ul>                        
+                </h3>
+              </div> 
+            </div>
+      </section>
+    </div>
 
-    </body>
+    <!-- el footer siempre aparece a lo largo y en la parte inferior de la página web -->
+    <footer>
+      <!-- Clase para visualizar como quiero que se vea y el formato del texto -->
+      <p class="footer-text"></p>
+      <!-- Con esto visualizo l -->
+      <p xmlns:cc="http://creativecommons.org/ns#" >Esta página está licencia por <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+  </body>
 
 </html>
